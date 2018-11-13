@@ -7,9 +7,8 @@ var session = require('express-session');
 var passport = require('passport');
 var expressValidator = require('express-validator');
 var LocalStrategy = require('passport-local').Strategy;
-var multer = require('multer');
-var upload  = multer({dest: './uploads'});
 var flash = require('connect-flash');
+var bcrypt = require('bcryptjs');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var db = mongoose.connection;
@@ -22,9 +21,6 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-
-// Handle File Upload
-//app.use(multer({dest: './uploads'}));
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -45,6 +41,7 @@ app.use(passport.session());
 
 // Validator
 // Need to look into the validator later (35:00)
+app.use(expressValidator());
 
 // Flash
 app.use(require('connect-flash')());

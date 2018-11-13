@@ -1,0 +1,70 @@
+body {
+    /*Colors*/
+    --color-main: /*#2ebdb9;*/ #58b5b5;
+    --color-background: #d3e2dc;
+
+    --color-button: /*#e77423;*/ #0e7c8d;
+    --color-button-active: /*#ffae68;*/ #0e8d7b;
+
+    --color-text: white;
+
+    /*Defaults*/
+    --border-radius: 0.5rem;
+
+    /*Grid container variables*/
+    --navbar-height: 4rem;
+    --footer-height: 3rem;
+
+    /*Text defaults*/
+    --font-default-family: sans-serif;
+    --font-default-size: 1.5rem;
+}
+
+/*Button default styles*/
+.button-default-heavy {
+    background-color: var(--color-button);
+    border-radius: var(--border-radius);
+    font-size: var(--font-default-size);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin: 0.8rem;
+    padding: 0.2rem;
+    font-family: var(--font-default-family);
+    cursor: pointer;
+    width: 11rem;
+    height: 2rem;
+}
+
+.button-default-heavy:hover {
+    background-color: var(--color-button-active);
+}
+
+.button-default-light {
+    color: white;
+    font-size: var(--font-default-size);
+    text-align: center;
+    font-family: var(--font-default-family);
+    margin: 0.8rem;
+    cursor: pointer;
+    padding: 0.2rem 1rem;
+    border-radius: var(--border-radius);
+    width: 5rem;
+    height: 2rem;
+}
+
+.button-default-light:hover {
+    background-color: var(--color-button-active);
+}
+
+.button-default-multiple {
+    background-color: var(--color-button);
+    height: fit-content;
+    grid-area: left;
+    justify-self: center;
+    display: flex;
+    border-radius: var(--border-radius);
+    margin-top: 3rem;
+    cursor: pointer;
+    width: 40rem;
+}

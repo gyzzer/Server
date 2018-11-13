@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+    <script src="/javascripts/backup.js"></script>
+    <link href="/stylesheets/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="gridContainer">
+    <!--img class="frontpageBackground" src="images/backgroundImage.png"-->
+
+    <div class="nav-bar">
+        <img class="logo" src="images/logo.svg">
+        <header class="header" onclick="returnToFrontpage()">BackUP</header>
+        <div class="button-default-heavy" onclick="createUserButtonOpen()">
+            Opret Profil
+        </div>
+        <div class="button-default-light" onclick="loginButtonOpen()">
+            Log in
+        </div>
+    </div>
+
+    <div class="login-box login-box-control">
+        <form method="post" action="/users/login">
+            <div class="login-box-content">Brugernavn:</div>
+            <input name="username" type="text" id="login-user" class="login-input" required placeholder="Brugernavn">
+            <div class="login-box-content">Kodeord:</div>
+            <input name="password" type="text" id="login-code" class="login-input" required placeholder="Kodeord">
+            <button type="submit" name="submit">submit</button>
+        </form>
+        <!--<div class="button-default-heavy login-button" onclick="loginButton()">Login</div>-->
+    </div>
+
+    <div class="create-profile-box login-box">
+        <form method="post" action="/users/register">
+            <div class="login-box-content">Brugernavn:</div>
+            <input name="username" type="text" id="new-profile-username" class="login-input" required placeholder="Brugernavn">
+            <div class="login-box-content">Email:</div>
+            <input name="email" type="text" id="new-profile-email" class="login-input" required placeholder="Email">
+            <div class="login-box-content">Kodeord:</div>
+            <input name="password" type="text" id="new-profile-code" class="login-input" required placeholder="Kodeord">
+            <div class="login-box-content">Gentag Kodeord:</div>
+            <input name="password2" type="text" id="new-profile-code-repeat" class="login-input" required placeholder="Kodeord">
+            <button type="submit" name="submit">submit</button>
+        </form>
+        <!--<div class="button-default-heavy login-button" onclick="">Opret ny profil</div>-->
+
+
+    </div>
+
+    <div class="show-frontpage frontpage-content"></div>
+    <div class="show-frontpage frontpage-content-show">...</div>
+    <div class="show-frontpage frontpage-button button-default-heavy">Start de gode siddevaner her</div>
+
+    <div class="show-main button-default-multiple">
+        <div class="main-date-content main-date-content-day">Dag</div>
+        <div class="main-date-content">Uge</div>
+        <div class="main-date-content">Måned</div>
+        <div class="main-date-content main-date-content-year">År</div>
+    </div>
+
+    <div class="show-main main-date-change">
+        <div class="main-date-change-content main-date-change-content-arrowleft">
+            <img src="images/ArrowLeft_icon.svg">
+        </div>
+        <div class="main-date-change-content">21 Oktober 2018</div>
+        <div class="main-date-change-content main-date-change-content-arrowright">
+            <img src="images/ArrowRight_icon.svg">
+        </div>
+    </div>
+
+    <div class="show-main main-date-graph"></div>
+
+    <div class="show-main main-content-button button-default-multiple">
+        <div class="main-content-button-content main-date-change-content main-content-button-goals">Mål</div>
+        <div class="main-content-button-content main-date-change-content">Øvelser</div>
+        <div class="main-content-button-content main-date-change-content main-content-button-settings">Indstillinger</div>
+    </div>
+
+    <div class="show-main main-content"></div>
+
+    <div class="footer">
+        <div class="footer-content footer-title">BackUP</div>
+        <div class="button-default-light footer-content">Om os</div>
+        <div class="button-default-light footer-content">Kontakt</div>
+    </div>
+</div>
+
+</body>
 </html>

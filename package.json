@@ -21,6 +21,10 @@
     "passport-local": "*",
     "passport-http": "*",
     "multer": "*",
-    "express-session": "*"
+    "express-session": "*",
+    "bcryptjs": "*"
+  },
+  "engines": {
+    "node": "11.0.0"
   }
 }
