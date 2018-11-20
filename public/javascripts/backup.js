@@ -1,7 +1,7 @@
 var loginBoxOpen = false;
 var CreateBoxOpen = false;
 
-var data = {state: 'Inactive'};
+var data = {state: 'Active'};
 
 function returnToFrontpage() {
     for(var element of document.getElementsByClassName("show-frontpage")) {
