@@ -5,6 +5,8 @@ var LocalStrategy = require('passport-local').Strategy;
 
 var User = require('../models/user');
 
+var data = {test: 'testdata'};
+
 /* GET users listing. */
 router.get('/', function(req, res, next) {
     res.send('respond with a resource');
@@ -14,12 +16,26 @@ router.get('/test', ensureAuthenticated,  function(req, res, next) {
     res.render('testView', { title: 'Test View' });
 });
 
+router.post('/test', ensureAuthenticated,  function(req, res, next) {
+    console.log(req.body.state);
+    User.getUserByUsername(req.user.username, function(err, user) {
+        if (err) {
+            return done(err);
+        }
+
+
+
+    });
+
+});
+
 router.post('/login',
-    passport.authenticate('local',{failureRedirect:'/', }),
+    passport.authenticate('local', { failureRedirect: '/'}),
     function(req, res) {
 
     console.log('You are now logged in');
-    res.redirect('/');
+    console.log(req.user);
+    res.send('success').end();
 
 });
 
@@ -42,15 +58,24 @@ router.post('/register', function(req, res, next) {
     if (errors) {
         console.log(errors);
     } else {
-        var newUser = new User({
-            username: username,
-            email: email,
-            password: password
-        });
-        
-        User.createUser(newUser, function (err, user) {
-            if(err) throw err;
-            console.log(user);
+        User.getUserByUsername(username, function (err, user) {
+            if (err) { return done(err); }
+            if(!user){
+                console.log('is not a user');
+                var newUser = new User({
+                    username: username,
+                    email: email,
+                    password: password
+                });
+
+                User.createUser(newUser, function (err, user) {
+                    if(err) throw err;
+                });
+            } else {
+                console.log(user);
+                console.log('is already a user');
+            }
+
         });
 
         res.location('/');
@@ -77,7 +102,7 @@ passport.deserializeUser(function(id, done){
 
 passport.use(new LocalStrategy(function(username, password, done){
     User.getUserByUsername(username, function(err, user){
-        if(err) throw err;
+        if (err) { return done(err); }
         if(!user){
             return done(null, false, {message: 'Unknown User'})
         }
@@ -89,6 +114,7 @@ passport.use(new LocalStrategy(function(username, password, done){
                 return done(null, false, {message: 'Invalid Password'})
             }
         })
+        //http://www.passportjs.org/docs/username-password/
     });
 }));
 

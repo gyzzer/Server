@@ -1,6 +1,8 @@
 var loginBoxOpen = false;
 var CreateBoxOpen = false;
 
+var data = {state: 'Active'};
+
 function returnToFrontpage() {
     for(var element of document.getElementsByClassName("show-frontpage")) {
         element.style.display = "unset"
@@ -62,3 +64,58 @@ function CreateProfile() {
 function frontpageContentShift() {
 
 }
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+
+    $('#loginForm').on('submit', function(e) {
+        e.preventDefault();
+        console.log('The form is submitted');
+
+        let test = $('#loginForm').serialize();
+        console.log(test);
+
+        $.ajax({
+            url:'/users/login',
+            type:'post',
+            data:$('#loginForm').serialize(),
+            success:function(data){
+                console.log('It was successful');
+                console.log(data);
+
+                if (data == 'success'){
+                    loginButton();
+                } else {
+                    // Handle an unsuccessful login
+                }
+            }
+        });
+    });
+
+    $('#registrationForm').on('submit', function(e) {
+        e.preventDefault();
+        console.log('The form is submitted');
+        $.ajax({
+            url:'/users/register',
+            type:'post',
+            data:$('#registrationForm').serialize(),
+            success:function(data){
+                console.log('success?');
+            }
+        });
+    });
+
+
+    $('#sData').on('click', function(e){
+        console.log('we are testing now');
+        e.preventDefault();
+        $.ajax({
+            url:'/users/test',
+            type:'post',
+            data:data,
+            success:function(data){
+                console.log('success?');
+            }
+        });
+    });
+});

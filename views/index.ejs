@@ -2,6 +2,7 @@
 <html>
 <head>
     <title><%= title %></title>
+    <script src="/lib/jquery.min.js"></script>
     <script src="/javascripts/backup.js"></script>
     <link href="/stylesheets/styles.css" rel="stylesheet">
 </head>
@@ -22,18 +23,18 @@
     </div>
 
     <div class="login-box login-box-control">
-        <form method="post" action="/users/login">
+        <form id="loginForm">
             <div class="login-box-content">Brugernavn:</div>
             <input name="username" type="text" id="login-user" class="login-input" required placeholder="Brugernavn">
             <div class="login-box-content">Kodeord:</div>
             <input name="password" type="text" id="login-code" class="login-input" required placeholder="Kodeord">
-            <button type="submit" name="submit">submit</button>
+            <button class="button-default-heavy login-button" type="submit" name="submit">submit</button>
         </form>
         <!--<div class="button-default-heavy login-button" onclick="loginButton()">Login</div>-->
     </div>
 
     <div class="create-profile-box login-box">
-        <form method="post" action="/users/register">
+        <form id="registrationForm">
             <div class="login-box-content">Brugernavn:</div>
             <input name="username" type="text" id="new-profile-username" class="login-input" required placeholder="Brugernavn">
             <div class="login-box-content">Email:</div>
@@ -42,7 +43,7 @@
             <input name="password" type="text" id="new-profile-code" class="login-input" required placeholder="Kodeord">
             <div class="login-box-content">Gentag Kodeord:</div>
             <input name="password2" type="text" id="new-profile-code-repeat" class="login-input" required placeholder="Kodeord">
-            <button type="submit" name="submit">submit</button>
+            <button class="button-default-heavy login-button" type="submit" name="submit">submit</button>
         </form>
         <!--<div class="button-default-heavy login-button" onclick="">Opret ny profil</div>-->
 
@@ -84,8 +85,10 @@
         <div class="footer-content footer-title">BackUP</div>
         <div class="button-default-light footer-content">Om os</div>
         <div class="button-default-light footer-content">Kontakt</div>
+        <button id="sData" type="button">submit data</button>
     </div>
 </div>
+
 
 </body>
 </html>
