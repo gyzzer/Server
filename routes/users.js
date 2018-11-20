@@ -18,15 +18,7 @@ router.get('/test', ensureAuthenticated,  function(req, res, next) {
 
 router.post('/test', ensureAuthenticated,  function(req, res, next) {
     console.log(req.body.state);
-    User.getUserByUsername(req.user.username, function(err, user) {
-        if (err) {
-            return done(err);
-        }
-
-
-
-    });
-
+    User.updateUser(req.user.username, req.body.state);
 });
 
 router.post('/login',

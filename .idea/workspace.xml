@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08178067-e45d-4b55-8130-72c51d3d8b5d" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -63,7 +67,11 @@
           <entry key="ejs" value="283" />
           <entry key="js" value="3056" />
           <entry key="json" value="146" />
+<<<<<<< Updated upstream
           <entry key="txt" value="36" />
+=======
+          <entry key="txt" value="48" />
+>>>>>>> Stashed changes
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -71,11 +79,19 @@
           <entry key="EJS" value="283" />
           <entry key="JSON" value="146" />
           <entry key="JavaScript" value="3056" />
+<<<<<<< Updated upstream
           <entry key="PLAIN_TEXT" value="77" />
+=======
+          <entry key="PLAIN_TEXT" value="89" />
+>>>>>>> Stashed changes
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
         <counts>
+<<<<<<< Updated upstream
+=======
+          <entry key="git.branch.checkout.local" value="1" />
+>>>>>>> Stashed changes
           <entry key="git.branch.create.new" value="1" />
         </counts>
       </usages-collector>
@@ -137,7 +153,11 @@
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
+<<<<<<< Updated upstream
               <caret column="16" selection-start-column="16" selection-end-column="16" />
+=======
+              <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -329,7 +349,11 @@
       <workItem from="1541478733630" duration="16735000" />
       <workItem from="1542112440303" duration="16339000" />
       <workItem from="1542203595756" duration="65000" />
+<<<<<<< Updated upstream
       <workItem from="1542203791212" duration="1543000" />
+=======
+      <workItem from="1542203791212" duration="3751000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1541411200718</created>
@@ -401,6 +425,7 @@
       <option name="project" value="LOCAL" />
       <updated>1542205731137</updated>
     </task>
+<<<<<<< Updated upstream
     <option name="localTasksCounter" value="11" />
     <servers />
   </component>
@@ -412,6 +437,32 @@
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18649046" />
+=======
+    <task id="LOCAL-00011" summary="setup">
+      <created>1542205898740</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1542205898740</updated>
+    </task>
+    <task id="LOCAL-00012" summary="setup">
+      <created>1542207122911</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1542207122911</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="49917000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="532" y="39" width="1400" height="1000" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18649046" />
+>>>>>>> Stashed changes
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -425,7 +476,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3290993" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3290993" />
+=======
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3290993" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3290993" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -604,7 +659,11 @@
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
+<<<<<<< Updated upstream
           <caret column="16" selection-start-column="16" selection-end-column="16" />
+=======
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
