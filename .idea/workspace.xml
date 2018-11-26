@@ -4,8 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08178067-e45d-4b55-8130-72c51d3d8b5d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="08178067-e45d-4b55-8130-72c51d3d8b5d" name="Default Changelist" comment="setup">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,7 +38,7 @@
           <entry key="css" value="3" />
           <entry key="ejs" value="5" />
           <entry key="html" value="1" />
-          <entry key="js" value="21" />
+          <entry key="js" value="22" />
           <entry key="json" value="9" />
           <entry key="svg" value="1" />
           <entry key="ts" value="1" />
@@ -51,7 +51,7 @@
           <entry key="EJS" value="5" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="9" />
-          <entry key="JavaScript" value="24" />
+          <entry key="JavaScript" value="25" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="SVG" value="1" />
           <entry key="TypeScript" value="1" />
@@ -61,24 +61,24 @@
         <counts>
           <entry key="Procfile" value="41" />
           <entry key="ejs" value="283" />
-          <entry key="js" value="3081" />
+          <entry key="js" value="3105" />
           <entry key="json" value="146" />
-          <entry key="txt" value="53" />
+          <entry key="txt" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="EJS" value="283" />
           <entry key="JSON" value="146" />
-          <entry key="JavaScript" value="3081" />
-          <entry key="PLAIN_TEXT" value="94" />
+          <entry key="JavaScript" value="3105" />
+          <entry key="PLAIN_TEXT" value="106" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
         <counts>
-          <entry key="git.branch.checkout.local" value="4" />
+          <entry key="git.branch.checkout.local" value="5" />
           <entry key="git.branch.create.new" value="2" />
-          <entry key="git.branch.delete.local" value="3" />
+          <entry key="git.branch.delete.local" value="4" />
           <entry key="git.branch.delete.remote" value="2" />
           <entry key="git.checkout.as.new.branch" value="1" />
         </counts>
@@ -91,7 +91,17 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/user.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -104,7 +114,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Setup" />
+        <entry key="$PROJECT_DIR$" value="temp" />
       </map>
     </option>
   </component>
@@ -314,11 +324,32 @@
       <option name="project" value="LOCAL" />
       <updated>1543236867306</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="setup">
+      <created>1543236966530</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1543236966530</updated>
+    </task>
+    <task id="LOCAL-00015" summary="setup">
+      <created>1543237048863</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1543237048863</updated>
+    </task>
+    <task id="LOCAL-00016" summary="setup">
+      <created>1543237378831</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1543237378831</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50603000" />
+    <option name="totallyTimeSpent" value="51298000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -344,9 +375,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290993" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4992658" visible="true" weight="0.3290993" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4992658" weight="0.3290993" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4992658" weight="0.3290993" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4992658" visible="true" weight="0.3290993" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3290993" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -527,8 +558,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="323">
+          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
         </state>
       </provider>
     </entry>
