@@ -232,7 +232,7 @@
       <workItem from="1542203791212" duration="1543000" />
       <workItem from="1543239973280" duration="19000" />
       <workItem from="1543240014923" duration="40000" />
-      <workItem from="1543240076749" duration="842000" />
+      <workItem from="1543240076749" duration="1127000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1541411200718</created>
@@ -409,11 +409,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543240741203</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="setup">
+      <created>1543241053776</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1543241053776</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54214000" />
+    <option name="totallyTimeSpent" value="54499000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -439,9 +446,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290993" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.4992658" visible="true" weight="0.3290993" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4992658" weight="0.3290993" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4992658" weight="0.3290993" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4992658" visible="true" weight="0.3290993" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.3290993" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3290993" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
