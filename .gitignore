@@ -1,4 +1,2 @@
-"Add sensitive_data/logins.js"
-/sensitive_data
-sensitive_data/logins.js
-/.idea/workspace.xml
+sensitive_data/*
+.idea/workspace.xml
